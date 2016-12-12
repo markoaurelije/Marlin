@@ -90,13 +90,13 @@
 #if TEMP_SENSOR_0 == -1
   #define TEMP_0_PIN        6   // Analog Input (connector *K1* on RUMBA thermocouple ADD ON is used)
 #else
-  #define TEMP_0_PIN       15   // Analog Input (default connector for thermistor *T0* on rumba board is used)
+  #define TEMP_0_PIN       10   // Analog Input (default connector for thermistor *T0* on rumba board is used)
 #endif
 
 #if TEMP_SENSOR_1 == -1
   #define TEMP_1_PIN        5   // Analog Input (connector *K2* on RUMBA thermocouple ADD ON is used)
 #else
-  #define TEMP_1_PIN       14   // Analog Input (default connector for thermistor *T1* on rumba board is used)
+  #define TEMP_1_PIN        9   // Analog Input (default connector for thermistor *T1* on rumba board is used)
 #endif
 
 #if TEMP_SENSOR_2 == -1
@@ -130,7 +130,7 @@
 // Misc. Functions
 //
 #define SDSS               53
-#define LED_PIN            13
+#define LED_PIN            6
 #define PS_ON_PIN          45
 #define KILL_PIN           46
 
@@ -145,6 +145,6 @@
 #define LCD_PINS_D5        38
 #define LCD_PINS_D6        41
 #define LCD_PINS_D7        40
-#define BTN_EN1            11
-#define BTN_EN2            12
+#define BTN_EN1            12
+#define BTN_EN2            11
 #define BTN_ENC            43
