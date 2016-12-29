@@ -504,7 +504,7 @@
   //#define BABYSTEP_XY  //not only z, but also XY in the menu. more clutter, more functions
                        //not implemented for deltabots!
   #define BABYSTEP_INVERT_Z false  //true for inverse movements in Z
-  #define BABYSTEP_MULTIPLICATOR 40 //faster movements, For BigBox 40 = 0.01mm
+  #define BABYSTEP_MULTIPLICATOR 20 //faster movements, For BigBox 20 = 0.05mm
 #endif
 
 //
@@ -580,9 +580,9 @@
 // made available here for specialized needs, ie dual extruder setup.
 #if ENABLED(MESH_BED_LEVELING)
   #define MESH_MIN_X (X_MIN_POS + MESH_INSET)
-  #define MESH_MAX_X (X_MAX_POS - (MESH_INSET))
+  #define MESH_MAX_X (X_MAX_POS - (MESH_INSET) - 38)
   #define MESH_MIN_Y (Y_MIN_POS + MESH_INSET)
-  #define MESH_MAX_Y (Y_MAX_POS - (MESH_INSET))
+  #define MESH_MAX_Y (Y_MAX_POS - (MESH_INSET) - 35)
 #endif
 
 // @section extras
